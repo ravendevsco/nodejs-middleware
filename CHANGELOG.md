@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/ravendevsco/nodejs-middleware/compare/v3.0.1...v3.0.2) (2023-04-25)
+
+
+### Features
+
+* :rocket: ([d4aabf8](https://github.com/ravendevsco/nodejs-middleware/commit/d4aabf8caebde892cd3ebd10694739680ec76609))
+
 ### [3.0.1](https://github.com/ravendevsco/nodejs-middleware/compare/v3.0.0...v3.0.1) (2023-04-25)
 
 
