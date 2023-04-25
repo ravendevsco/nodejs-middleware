@@ -1,4 +1,4 @@
-import { Pool } from 'pg';
+import { Pool, QueryResultRow } from 'pg';
 import { PageRequest } from '../../pagination/PageRequest';
 import { PageResult } from '../../pagination/PageResult';
 import { Paginator } from '../../pagination/Paginator';
@@ -8,7 +8,7 @@ import { StatusCodeReason } from '../../status/StatusCodeReason';
 import { Repository } from '../Repository';
 import { PsqlUtils } from './PsqlUtils';
 
-export abstract class BasePsqlRepository<T> implements Repository<T> {
+export abstract class BasePsqlRepository<T extends QueryResultRow> implements Repository<T> {
   protected psql: Pool;
   protected tableName: string;
 

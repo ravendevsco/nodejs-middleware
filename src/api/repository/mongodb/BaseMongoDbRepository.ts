@@ -1,11 +1,11 @@
-import { Document, Model } from 'mongoose';
+import { AnyKeys, Document, Model } from 'mongoose';
 import { PageRequest } from '../../pagination/PageRequest';
 import { PageResult } from '../../pagination/PageResult';
 import { Paginator } from '../../pagination/Paginator';
 import { Repository } from '../Repository';
 import { MongoDbResult } from './MongoDbResult';
 
-export abstract class BaseMongoDbRepository<T> implements Repository<T> {
+export abstract class BaseMongoDbRepository<T extends AnyKeys<Document<any, any, any>>> implements Repository<T> {
   private mongooseModel: Model<Document, {}>;
 
   constructor(mongooseModel: Model<Document, {}>) {
