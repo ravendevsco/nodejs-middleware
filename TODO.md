@@ -1,2 +1,2 @@
-- module export, i.e.: @ravendevsco/nodejs-middleware/core, @ravendevsco/nodejs-middleware/utils
+- module export, i.e.: @ravendevs/nodejs-middleware/core, @ravendevs/nodejs-middleware/utils
 - resolve all todo

@@ -1,4 +1,4 @@
-# @ravendevsco/nodejs-middleware
+# @ravendevs/nodejs-middleware
 
 Node.js middleware supporting common operation with:
 
@@ -16,7 +16,7 @@ Node.js middleware supporting common operation with:
 
 ```
 // Account.ts
-import { AuthUser } from '@ravendevsco/nodejs-middleware';
+import { AuthUser } from '@ravendevs/nodejs-middleware';
 
 export interface Account extends AuthUser {
 name: string;
@@ -72,7 +72,7 @@ roles?: string[] = [];
 
 ```
 // AccountRoute.ts
-import { BaseCrudRoute } from '@ravendevsco/nodejs-middleware';
+import { BaseCrudRoute } from '@ravendevs/nodejs-middleware';
 import { NextFunction, Request, RequestHandler, Response } from 'express';
 import { Authenticate } from '../../server/express/middleware/Authenticate';
 import { ChartWidgetController } from '../chartWidget/ChartWidgetController';
@@ -113,7 +113,7 @@ export class AccountRoute extends BaseCrudRoute<AccountEntity> {
 
 ```
 // AccountController.ts
-import { BaseRequest, BaseResult, StatusCode } from '@ravendevsco/nodejs-middleware';
+import { BaseRequest, BaseResult, StatusCode } from '@ravendevs/nodejs-middleware';
 import { Response } from 'express';
 import { BaseApiCrudController } from '../../controller/BaseApiCrudController';
 import { AccountEntity } from './AccountEntity';
@@ -177,7 +177,7 @@ export class AccountService extends BaseApiCrudService<AccountEntity> {
 
 ```
 // AccountRepository.ts
-import { PageRequest, PageResult, ServerException } from '@ravendevsco/nodejs-middleware';
+import { PageRequest, PageResult, ServerException } from '@ravendevs/nodejs-middleware';
 import { Pool } from 'pg';
 import { BaseApiPsqlRepository } from '../../repository/postgresql/BaseApiPsqlRepository';
 import { SqlTable } from '../../repository/postgresql/SqlTable';
@@ -247,5 +247,5 @@ this.accountRoute = new AccountRoute(this.accountController, this.chartWidgetCon
 
 ### Install / uninstall the symlinked package in a project
 
-- npm link @ravendevsco/nodejs-middleware
-- npm unlink --no-save @ravendevsco/nodejs-middleware
+- npm link @ravendevs/nodejs-middleware
+- npm unlink --no-save @ravendevs/nodejs-middleware
